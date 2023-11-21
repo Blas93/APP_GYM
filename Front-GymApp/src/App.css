@@ -1,0 +1,62 @@
+/*Poner los datos de CSS de los elementos comunes, ej. el tamaño del header y del footer*/
+/* Estilo para el encabezado (header) */
+
+main {
+    overflow-x: hidden;
+    margin-bottom: 5rem;
+}
+
+
+
+h1 {
+    
+    font-weight: bold;
+}
+
+
+
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+nav a {
+    padding-right: 0.2rem;
+}
+
+/*hacer que al poner el cursor sobre el link se cambie el color de fondo*/
+nav a:hover {
+    background-color: white;
+}
+
+/*formato del título de login y register*/
+/* Estilos para el título */
+h1 {
+    text-align: center;
+    /* Centrar el título horizontalmente */
+    margin-bottom: 20px;
+    /* Espaciado inferior del título */
+    color: #333;
+    /* Color del texto del título */
+}
+
+/*formato de los input de login y register*/
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    /* Ocupa el ancho completo del formulario */
+    padding: 10px;
+    /* Espaciado interno de los campos de entrada */
+    margin-bottom: 10px;
+    /* Espaciado inferior entre campos de entrada */
+    border: 1px solid #ccc;
+    /* Borde de los campos de entrada */
+    border-radius: 5px;
+    /* Borde redondeado */
+}
+
+.input-file {
+    display: none;
+}

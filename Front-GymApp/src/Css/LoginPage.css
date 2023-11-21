@@ -1,0 +1,74 @@
+h1#acceso{
+  font-family: 'Arial', sans-serif; /* Tipo de letra */
+    color: #333; /* Color de texto oscuro */
+    text-align: center; /* Centra el texto */
+    background-color: transparent; /* Fondo amarillo */
+    padding: 10px 20px; /* Añade espacio alrededor del texto */
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Estilos para el contenedor principal */
+section#login  {
+  width: 439.09px; /* Ancho de 400 píxeles */
+  height: 518.72px; /* Altura de 400 píxeles */
+    text-align: center;
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    padding: 900px; /* Espaciado interno del formulario */
+    background-color: #f5f5f5; /* Color de fondo */
+    padding: 10px;
+    margin: 10px;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+ 
+
+  /* Estilos para el formulario */
+   form#login {
+   
+    height: 400px;
+    width: 100%; /* Ancho del 100% del contenedor */
+    padding: 10px; /* Espaciado interno del formulario */
+    background-color: #fff; /* Color de fondo */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+  fieldset{
+    margin-bottom: 3px;
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  /* Estilos para los campos de entrada y etiquetas */
+  label {
+    display: block; /* Muestra cada etiqueta en una línea separada */
+    margin-bottom: 10px; /* Espaciado inferior entre etiquetas */
+    font-weight: bold; /* Texto en negrita para etiquetas */
+    
+  }
+  
+  
+input#password{
+  width: 100%;
+}
+
+  /* Estilos para el botón de inicio de sesión */
+  button.b-acceder {
+    color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  }
+  
+  
+  
+  /* Estilos para el mensaje de error */
+  p {
+     /* Color rojo para el mensaje de error */
+    font-weight: bold; /* Texto en negrita para el mensaje de error */
+    margin-top: 10px; /* Espaciado superior del mensaje de error */
+  }
+  

@@ -1,0 +1,74 @@
+/* Estilos para el párrafo que contiene la información del usuario */
+p#login {
+    
+    color: #000;
+    
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el enlace que lleva a la página del usuario */
+#lo-link {
+    text-decoration: none;
+    color: #FFD700; /* Amarillo */
+    margin-left: 15px;
+}
+
+#lo-link.link{
+    color: transparent;
+    background-color: transparent;
+}
+
+/* Estilos para la imagen del avatar */
+.Avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+/* Estilos para los enlaces de registro y login */
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color:black; 
+    background-color: #FFD700; /* Fondo amarillo */
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Transiciones al pasar el ratón */
+}
+
+.link:hover {
+    background-color: #000; /* Negro al pasar el ratón */
+    color: #FFD700; /* Amarillo al pasar el ratón */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Agrega sombra al texto al pasar el ratón */
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+.link:active {
+    transform: scale(0.95); /* Efecto de escala al hacer clic */
+}
+
+.lgo-link {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Transición de colores y esquinas redondeadas */
+  }
+  
+  .lgo-link:hover,
+  .lgo-link:focus {
+    background-color: black;
+    color: yellow;
+    border-radius: 10px; /* Cambia las esquinas redondeadas al pasar el cursor */
+    outline-offset: 3px;
+  }
+  
+  
+  

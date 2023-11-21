@@ -1,0 +1,26 @@
+
+/* Estilos para el botón de eliminar por ID */
+div label {
+  font-weight: bold; /* Texto en negrita para la etiqueta del ID */
+}
+
+div input {
+  margin-right: 10px; /* Espaciado derecho del campo de entrada */
+}
+
+
+/*Todos los div del add, delete y edit, se manejan por este div que esta abajo*/
+/*div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f0f0f0;
+}*/
+button.b-eliminar{
+  background-color: transparent;
+  border: none;
+  
+}
+
+
+

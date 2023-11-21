@@ -1,0 +1,116 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    opacity: 1;
+     z-index: 5;   
+    background-color: #E1E1E1;
+    color: #000000;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem 1rem;
+    height: 5rem;
+   
+}
+
+
+ a {
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+
+a{
+    color: #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+/*formato al link de Registro*/
+.link-r{
+    background-color: yellow;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+/*formato al link de Login*/
+  .link-l{
+    background-color: yellow;
+    border-color: 0.1 0.1 black;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+  /* formato de los links*/
+a{
+    color:#000;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: flex;
+  }
+  ul li{
+    display:inline-flex; /*hace que se pongan los elementos de la lista en línea*/
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 0.5rem;
+  }
+ 
+
+  /* Estilo base para los enlaces */
+.link-r,
+.link-l {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Estilo para cuando el cursor pasa sobre los enlaces */
+.link-r:hover,
+.link-l:hover {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Estilo para los enlaces activos (por ejemplo, cuando la página actual es "/register" o "/login") */
+.link-r.active,
+.link-l.active {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Estilo para la lista y elementos de lista */
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.list-link {
+  margin-right: 20px;
+}
+
+.logo-imagen {
+  width: 50px; /* Ajusta el ancho según sea necesario */
+  height: 50px; /* Ajusta la altura según sea necesario */
+  margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
