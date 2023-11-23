@@ -64,7 +64,7 @@ export const ActivityPage = () => {
   if (error) return <ErrorMessage message={error} />;
 
   return (
-    <section>
+    <section className="s-descripcion">
       <h1>Descripción de la Actividad</h1>
       <form onSubmit={handleSubmit}>
         <label>
