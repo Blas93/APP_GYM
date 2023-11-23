@@ -14,18 +14,19 @@ export const Activity = ({ activity, deleteActivity, likeActivity }) => {
 	return (
 		<article>
 			<Link className='l-card'to={`/activity/${activity.id}`}>
-				<p id="name">{activity.activity_name}</p>
-				<p id="description">{activity.description}</p>
-				<p id="musculargroup">{activity.muscle_group}</p>
-				<p id="typology">{activity.typology}</p>
+				<p className="name">{activity.activity_name}</p>
+				<p className="description">{activity.description}</p>
+				<p className="musculargroup">{activity.muscle_group}</p>
+				<p className="typology">{activity.typology}</p>
 
 				{activity.image && (
-					<img
+					<img className="a-img"
 						src={`${import.meta.env.VITE_APP_BACKEND}/uploads/${activity.image}`}
 						alt={activity.text}
 					/>
 				)}
 			</Link>
+			<div className="select-list">
 			<section>
 				<p className="totalLikes">{totalLikes}</p>
 				<button className="b-favorite" onClick={handleClick}>{activity.liked ? 
@@ -35,6 +36,7 @@ export const Activity = ({ activity, deleteActivity, likeActivity }) => {
 				<button className="b-eliminar" onClick={() => deleteActivity(activity.id, token)} >
 				<img id='Elliminar' src={Eliminar} alt='Eliminar' title='Eliminar actividad' />	
 				</button>}
+			</div>
 		</article>
 	);
 };

@@ -1,91 +1,139 @@
-.Filtro{
-  display: flex; /*coloca los elementos en línea*/
-  gap: 2rem; /*separa los botones entre ellos*/
-  font-size: 15px;
-  text-align: center;
-  height: 5rem; 
-  vertical-align: middle;
+
+.totalLikes{
+  color: transparent;
 }
 
-
-/* Estilos para el componente Filter */
-
+.l-card{
+  display: flex;
+  flex-direction: column;
+  text-overflow:ellipsis;
+}
 .cuadro-formulario{
-  background-color: white;
-  box-shadow: none; /* Sombra */
+  border-color: black;
 }
-.t-h1{
-  background-color: white;
-  border: none;
-  border-color: white;
-  width: fit-content;
-  height: fit-content;
-
+.t-select{
+  height:37.5px ;
+  margin-bottom: 10px;
 }
-.Filter {
-    background-color: #f5f5f5; /* Color de fondo del Filter */
-    padding: 10px; /* Espaciado interno del Filter */
-    border-radius: 5px; /* Borde redondeado */
-    margin-bottom: 20px; /* Espaciado inferior del Filter */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
-  }
-  /* Estilos para los botones en Filter (ajusta según tus necesidades) */
-  .Filter button {
-    background-color: #000; /* Color de fondo del botón en Filter */
-    color: #fff; /* Color del texto del botón en Filter */
-    border: none; /* Elimina el borde del botón en Filter */
-    padding: 10px 20px; /* Espaciado interno del botón en Filter */
-    border-radius: 5px; /* Borde redondeado del botón en Filter */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón en Filter */
-    margin-right: 10px; /* Espaciado a la derecha de los botones en Filter */
-    transition: background-color 0.3s ease; /* Transición de color de fondo en Filter */
-  }
-  
-  .Filter button:hover {
-    color: yellow; /* Color de fondo al pasar sobre el botón en Filter */
-  }
+.gm-select{
+  height:37.5px ;
+}
+#agregar{
+  color: white;
+  background-color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
-  #grupoMuscular{
-    font-size: 16px;
+.a-list{
+  border:1rem;
+  border: 0;
+	border-radius: 0.9rem;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+  gap: 2rem;
+  margin: 1rem;
+  border:2px solid rgba(0,0,0,0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+  text-align: center;
+}
+.a-list:hover{
+  background: #B1E8CD;
+}
+
+.select-list{
+  appearance:none;
+} 
+/*Da dormato a la imagen del formulario de subida como de la tarjeta*/
+.a-img{
+  width: 150px;
+  height: 150px;
   }
-  #tipologia{
-    font-size: 16px; 
+  @media (max-width: 1024px){
+    .t-select{
+      width: 948px;
+    }
+    .gm-select{
+      width: 948px;
+    }
+  } 
+  @media (max-width: 768px){
+    .t-select{
+      width: 692px;
+    }
+    .gm-select{
+      width: 692px;
+    }
+  } 
+  @media (max-width: 425px){
+  .t-select{
+    width: 349px;
   }
-  
-  
-  /* Estilos para el componente ActivitiesList */
-  .ActivitiesList {
-    background-color: #fff; /* Color de fondo de ActivitiesList */
-    padding: 20px; /* Espaciado interno de ActivitiesList */
-    border-radius: 5px; /* Borde redondeado */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  .gm-select{
+    width: 349px;
   }
-  
-  select{
-    /*coloca en columna los select del formulario de subida*/
-    display: flex;
-    flex-direction: column;
-    margin: 0.5rem;
-    width: auto;
-    height: 37.5px;
+} 
+  @media (max-width: 375px){
+    .t-select{
+      width: 299px;
+    }
+    .gm-select{
+      width: 299px;
+    }
+  }
+@media (max-width: 320px){
+ .l-act{
     text-align: center;
   }
-  
-  .totalLikes{
-    color: white;
-  }
+ .filtro{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  gap: 2rem;
+  width: fit-content;
+}
+#buscar{
+  display: block;
+  text-align: center;
+}
+.t-h1{
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+}
 
- 
- 
-  
-  /* Estilos para los elementos en ActivitiesList (ajusta según tus necesidades) */
-  /*.ActivitiesList p {
-    font-size: 16px; /* Tamaño de fuente de los elementos en ActivitiesList */
-    /*margin-bottom: 10px; /* Espaciado inferior de los elementos en ActivitiesList */
-  /*}
-  /*.favorite-like .favorite{
-    background-color: transparent;
-  }*/
+.t-select{
+  width: 276px;
+}
+.gm-select{
+  width: 276px;
+}
+.a-card{
+  height:35rem;
+  border: 0.5rem;
+  border-color: black;
+}
+.b-favorite .b-eliminar{
+  text-align: center;
+}
+.b-favorite{
+  overflow: left;
+}
+.b-eliminar{
+  overflow: right;
+}
+#description #name{
+  overflow: scroll;
+}
+
+
+}
+
  
 
   

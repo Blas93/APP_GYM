@@ -10,7 +10,7 @@ export const ActivitiesList = ({ activities, addActivity, deleteActivity, likeAc
 	console.log('activities', activities);
 	return (
 		<section>
-			<h2>Lista de Actividades</h2>
+			<h2 className='t-h2'>Lista de Actividades</h2>
 			{/* Desactivar cuando el user del contexto tenga role */}
 			{user && user.role === 'administrator' && (
 				<AddActivity addActivity={addActivity} />
@@ -22,7 +22,7 @@ export const ActivitiesList = ({ activities, addActivity, deleteActivity, likeAc
 				<ul>
 					{activities.map((activity) => (
 						
-						<li key={activity.id}>
+						<li className='a-list' key={activity.id}>
 							<Activity activity={activity} deleteActivity={deleteActivity} likeActivity={likeActivity} />
 						</li>
 						
