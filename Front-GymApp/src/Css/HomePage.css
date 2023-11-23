@@ -14,9 +14,11 @@
 .t-select{
   height:37.5px ;
   margin-bottom: 10px;
+  padding:0.5em;
 }
 .gm-select{
   height:37.5px ;
+  padding:0.5em;
 }
 #agregar{
   color: white;
