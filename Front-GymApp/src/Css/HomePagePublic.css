@@ -14,7 +14,7 @@ h1.titulo-principal {
 
 
 .gratuito {
-    font-size: 1em;
+    font-size: 2em;
     font-weight: bold;
     color: #FFD700;
     text-align: center;
@@ -46,7 +46,9 @@ h1.titulo-principal {
     text-align: right;
     width: auto;
     height: auto;
+    
 }
+ 
 
 #label-donde {
     background-image: url(../imageneshomepublic/dondequieras.png);
@@ -73,9 +75,13 @@ h1.titulo-principal {
     margin: 1rem;
     text-align: left;
     width: auto;
-    height: auto;
+    height: 185px;
 }
 
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+}
 
 span {
     display: block;
@@ -83,32 +89,18 @@ span {
 
 /*formato del texto de las tres etiquetas:*/
 .text-white {
-    color: white;
+    color: wheat;
 }
 
-h3 {
-    font-weight: bold;
-    -webkit-text-stroke: 0.03rem black;
-}
+
 
 .text-white-outliner {
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px yellow;
     /*esta propiedad es para poder poner de color el borde de la letra*/
-    color: transparent;
 }
 
-fieldset {
-    border: 2px solid transparent; /* Amarillo */
-    padding: 10px;
-    border-radius: 10px;
-    width: calc(33.3333% - 20px); /* El 20px es la suma de los márgenes horizontales */
-    box-sizing: border-box;
-}
-h4 {
-    color: white;
-    -webkit-text-stroke: 0.03rem black;
 
-}
+
 
 p {
     align-content: center;
@@ -117,38 +109,32 @@ p {
     width: 1rem;
     height: 1rem;
 }
+
 .home-public-blocks {
     display: flex;
-    justify-content: space-between;
-    background-color: white;
-    width: 100%;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ajusta según tus necesidades */
+  }
+  
+  .home-public-blocks fieldset {
+    flex: 1 1 30%; /* Ajusta según tus necesidades */
+    max-width: calc(33.3333% - 20px);
+    margin: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .home-public-blocks fieldset {
+      flex: 1 1 45%; /* Ajusta según tus necesidades para dispositivos más pequeños */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-public-blocks fieldset {
+      flex: 1 1 100%; /* Ajusta según tus necesidades para dispositivos aún más pequeños */
+      max-width: calc(100% - 20px);
+    }
+  }
+  
 
-}
 
-/* Asegura que cada bloque dentro de .home-public-blocks ocupe el ancho completo */
-.home-public-blocks fieldset {
-    width: 100%;
-}
-
-@media (max-width: 325px){
-    .home-public-blocks{
-    display: flex; /*coloca en bloque las cajas*/
-    justify-content: space-between; /*separa a la misma distancia las cajas entre si*/
-    margin-top: 30px;
-    width: 100%;
-}
-    .home-public{
-    box-sizing: content-box;
-    width: 100%;
-    height: 100%;
-}
- 
- fieldset {
-    border: 2px solid #FFD700; /* Amarillo */
-    padding: 15px;
-    border-radius: 10px;
-    width: calc(33.3333% - 20px); /* El 20px es la suma de los márgenes horizontales */
-    box-sizing: border-box;
-}
-}

@@ -24,7 +24,6 @@ label {
   display: block; /* Muestra cada etiqueta en una línea separada */
   margin-bottom: 10px; /* Espaciado inferior entre etiquetas */
   font-weight: bold; /* Texto en negrita para etiquetas */
-  padding: 10px;
   line-height: 1.5;
 }
 /* Estilos para el mensaje de error */
@@ -50,5 +49,10 @@ h1#registro{
   background-color: transparent; /* Fondo amarillo */
   font-weight: bold;
   font-size: 16px;
+  padding: 10px 20px; 
 
+}
+
+input#name{
+  margin-top: 0.5rem;
 }

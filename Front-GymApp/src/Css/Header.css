@@ -15,6 +15,14 @@ header {
 }
 
 
+@media screen and (max-width: 600px) {
+  header {
+    padding: 5px;
+    
+    align-items: flex-start;
+  }
+}
+
  a {
     color: #000000;
     align-items: center;
@@ -71,20 +79,9 @@ a{
 }
 
 /* Estilo para cuando el cursor pasa sobre los enlaces */
-.link-r:hover,
-.link-l:hover {
-  background-color: #333;
-  color: #fff;
-  transform: scale(1.1);
-}
 
-/* Estilo para los enlaces activos (por ejemplo, cuando la página actual es "/register" o "/login") */
-.link-r.active,
-.link-l.active {
-  background-color: #333;
-  color: #fff;
-  transform: scale(1.1);
-}
+
+
 
 /* Estilo para la lista y elementos de lista */
 .nav {

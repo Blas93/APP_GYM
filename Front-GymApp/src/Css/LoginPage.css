@@ -71,4 +71,8 @@ input#password{
     font-weight: bold; /* Texto en negrita para el mensaje de error */
     margin-top: 10px; /* Espaciado superior del mensaje de error */
   }
-  
+   label#email{
+    display: block;
+    font-weight: bold;
+    line-height: 1.5;
+   }

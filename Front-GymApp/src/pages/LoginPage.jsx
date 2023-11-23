@@ -27,7 +27,7 @@ export const LoginPage = () => {
     <h1 id='accesso'> Acceso al área privada </h1> 
     <form id='login' onSubmit={handleSubmit}>
         <fieldset>
-            <label htmlFor ="email">Email:</label>
+            <label id='email' htmlFor ="email">Email:</label>
             <input 
             type="email"
             id="email" 
