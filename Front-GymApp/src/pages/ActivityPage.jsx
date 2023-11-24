@@ -6,8 +6,8 @@ import { AuthContext } from "../context/AuthContext";
 
 export const ActivityPage = () => {
   const { id } = useParams();
-  const {token} = useContext(AuthContext)
-  const { activity, loading, error, editActivity } = useActivity(id, token);
+  const {user, token} = useContext(AuthContext)
+  const { activity, loading, error, editActivity, isAdmin } = useActivity(id, token, user );
   const navigate = useNavigate()
   const [activityData, setActivityData] = useState({
     activity_name: "",
@@ -54,8 +54,9 @@ export const ActivityPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   
+    
     const data = new FormData(e.target)
-    editActivity(id, data, token)
+    editActivity(id, data, token, user)
     
     navigate('/home')
   };
@@ -64,9 +65,12 @@ export const ActivityPage = () => {
   if (error) return <ErrorMessage message={error} />;
 
   return (
+    
     <section className="s-descripcion">
+      
       <h1>Descripción de la Actividad</h1>
-      <form onSubmit={handleSubmit}>
+      
+      <form id='general' onSubmit={handleSubmit}>
         <label>
           Nombre de la Actividad:
           <input
@@ -120,9 +124,10 @@ export const ActivityPage = () => {
             ))}
           </select>
         </label>
+        {isAdmin && ( 
         <button id="Boton-editar" type="submit">
           Editar
-        </button>
+        </button>)}
       </form>
     </section>
   );

@@ -2,7 +2,7 @@
 p#login {
     
     color: #000;
-    
+    justify-content: space-between;
     font-size: 1.2em;
     display: flex;
     align-items: center;
@@ -22,10 +22,11 @@ p#login {
 
 /* Estilos para la imagen del avatar */
 .Avatar-img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: auto;
     border-radius: 50%;
     margin-right: 10px;
+    
 }
 
 
@@ -53,11 +54,14 @@ p#login {
 }
 
 .lgo-link {
+  display: inline-block;
     background-color: yellow;
     color: black;
     border: none;
-    padding: 10px 20px;
+    padding:  10px 15px;
+    font-weight: bold;
     cursor: pointer;
+    width: auto;
     border-radius: 5px; /* Esquinas redondeadas */
     transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Transición de colores y esquinas redondeadas */
   }
@@ -70,6 +74,17 @@ p#login {
     outline-offset: 3px;
   }
   
+  @media screen and (max-width: 600px) {
+    #login{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lgo-link {
+       margin-top: 10px;
+      }
+
+}
   
   /* Estilos generales para los elementos li */
 .nav {

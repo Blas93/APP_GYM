@@ -3,7 +3,7 @@ import { editActivityService, getSigleActivityService } from "../services";
 //import { useSearchParams } from "react-router-dom";
 
 
-const useActivity = (id, token)=> {
+const useActivity = (id, token, user)=> {
 const [activity, setActivity] = useState (null);
 const [loading, setLoading] = useState (true);
 const [error, setError] = useState("");
@@ -30,17 +30,20 @@ const loadactivity =async () => {
     } finally {
         setLoading(false);
     }
-}
+};
 loadactivity();
 }, [id]);
 
 const editActivity = async (id, data, token) => {
+    if (user && user.role === 'administrator') {
     await editActivityService(id, data, token);
-    const newActivity = await getSigleActivityService (id);
+    const newActivity = await getSigleActivityService (id,token);
     setActivity(newActivity);
-}
-
-return {activity, loading, error, editActivity };
+    } else {
+        console.log("No tienes permisos para editar esta actividad.")
+    }
+};
+return {activity, loading, error, editActivity, isAdmin: user && user.role === 'administrator' };
 };
 
 

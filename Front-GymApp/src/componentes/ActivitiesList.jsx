@@ -1,10 +1,9 @@
 import { useContext } from 'react';
 import { Activity } from './Activity';
 import { AddActivity } from '../pages/AddActivity';
-// import { DeleteInformationActivityPage } from '../pages/DeleteInformationActivityPage';
+//import { DeleteInformationActivityPage } from '../pages/DeleteInformationActivityPage';
 //import { EditInformationActivityPage } from '../pages/EditInformationActivityPage';
 import { AuthContext } from '../context/AuthContext';
-
 export const ActivitiesList = ({ activities, addActivity, deleteActivity, likeActivity }) => {
 	const { user } = useContext(AuthContext); //Necesitamos que el usuario tenga role
 	console.log('activities', activities);
@@ -14,6 +13,8 @@ export const ActivitiesList = ({ activities, addActivity, deleteActivity, likeAc
 			{/* Desactivar cuando el user del contexto tenga role */}
 			{user && user.role === 'administrator' && (
 				<AddActivity addActivity={addActivity} />
+				
+				
 			)} 
 			
 			

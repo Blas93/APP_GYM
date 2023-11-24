@@ -22,6 +22,7 @@ setNuevoContenido('');
 return (
 <div>
    <h1>Editar Publicacion</h1>
+  
     <button className='b-guardar' onClick={editarPublicacion}>Guardar</button>
     <ul>
     {publicaciones.map((publicacion) => (
