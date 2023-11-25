@@ -1,6 +1,28 @@
 
+.Filtro{
+  display: flex;
+  flex-direction: row; /*pone todos los campos del formularios en una misma línea*/
+  margin-left: 20px; /*separa el form del filtro del margen izquierdo*/
+  gap: 1rem; /*da espacio entre cada uno de los campos del form*/
+  text-align: left; /*alinea el texto de cada campo a la izquierda*/
+  align-items: center;
+  margin-top: 1rem; /*separa el buscador del header*/
+}
+
+#buscar{
+  background-color: black;
+  color: white;
+}
+ul.ul-listaactividades{
+  display:grid;
+  grid-template-columns: repeat(2, efr);
+}
 .totalLikes{
   color: transparent;
+}
+label.l-imagen{
+  display: flex;
+  flex-direction: column;
 }
 
 .l-card{
@@ -44,7 +66,7 @@
   text-align: center;
 }
 .a-list:hover{
-  background: #B1E8CD;
+  background: rgb(236, 230, 63), 249, 115);
 }
 
 .select-list{
@@ -70,14 +92,31 @@
     .gm-select{
       width: 692px;
     }
+    .a-img{
+      width: 400px;
+      height: 400px;
+      }
   } 
   @media (max-width: 425px){
+    .Filtro{
+      display: flex;
+      flex-direction: column; /*pone todos los campos del formularios en columna*/
+      margin-left: none; /*separa el form del filtro del margen izquierdo*/
+      gap: 1rem; /*da espacio entre cada uno de los campos del form*/
+      text-align: left; /*alinea el texto de cada campo a la izquierda*/
+      align-items: center;
+      margin-top: 1rem; /*separa el buscador del header*/
+    }
   .t-select{
     width: 349px;
   }
   .gm-select{
     width: 349px;
   }
+  .a-img{
+    width: 370px;
+    height: 370px;
+    }
 } 
   @media (max-width: 375px){
     .t-select{
@@ -86,6 +125,10 @@
     .gm-select{
       width: 299px;
     }
+    .a-img{
+      width: 300px;
+      height: 300px;
+      }
   }
 @media (max-width: 320px){
  .l-act{
@@ -95,18 +138,10 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  text-align: left;
-  gap: 2rem;
-  width: fit-content;
-}
-#buscar{
-  display: block;
   text-align: center;
-  margin-left: 125px;
-  margin-top: 1rem;
-  background-color: black;
-  color: white;
+  gap: 1rem;
 }
+
 .t-h1{
   width: fit-content;
   height: fit-content;
@@ -124,6 +159,10 @@
   border: 0.5rem;
   border-color: black;
 }
+.a-img{
+  width: 250px;
+  height: 250px;
+  }
 .b-favorite .b-eliminar{
   text-align: center;
 }
@@ -137,6 +176,19 @@
   overflow: scroll;
 }
 
+.name{
+  text-align:left ;
+}
+.description{
+  text-align: left;
+}
+p.musculargroup{
+  text-align: left;
+}
+
+p.typology{
+  text-align: left;
+}
 
 }
 

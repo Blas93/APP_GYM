@@ -20,7 +20,7 @@ export const ActivitiesList = ({ activities, addActivity, deleteActivity, likeAc
 			
 
 			{activities.length ? (
-				<ul>
+				<ul className='ul-listaactividades'>
 					{activities.map((activity) => (
 						
 						<li className='a-list' key={activity.id}>
