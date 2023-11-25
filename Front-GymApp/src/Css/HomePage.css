@@ -102,6 +102,10 @@
 #buscar{
   display: block;
   text-align: center;
+  margin-left: 125px;
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
 }
 .t-h1{
   width: fit-content;

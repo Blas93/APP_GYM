@@ -18,4 +18,4 @@ Rutas:
     ___________________________________________________________________
 
 Para instalar los módulos necesarios ejecuta la siguiente línea en tu consola:
-npm i vite
+npm i
