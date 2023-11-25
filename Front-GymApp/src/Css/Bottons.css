@@ -1,5 +1,5 @@
  /*formato común para todos los botones:*/
- button  .lgo-link .b-Registro .b-acceder .buscar .agregar .subida { 
+ button.lgo-link .b-Registro .b-acceder .agregar .subida { 
   font-size: 14px; /* Tamaño de fuente más pequeño */
   padding: 5px 10px; /* Espacio alrededor del botón */
   /*color: #fff; /* Color del texto */
@@ -8,7 +8,7 @@
   /*cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
   transition: background-color 0.3s, color 0.3s; /* Agrega transición de color de fondo y texto */
 }
-button:hover  .lgo-link .buscar .b-Registro{
+button:hover  .lgo-link .b-Registro{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega sombra al pasar el ratón */
   color: yellow; /* Color de fondo al pasar sobre el botón */
 }
@@ -21,7 +21,7 @@ button:hover  .lgo-link .buscar .b-Registro{
   background-color: white;
     
   }
- div .buscar ,div .b-acceder , div .lgo-link , div .b-Registro {
+ div ,div.b-acceder , div.lgo-link , div.b-Registro {
     background-color: #000; /*Color de fondo del botón de eliminar por ID */
     color: #fff; /* Color del texto del botón de eliminar por ID */
     padding: 5px 10px; /* Espaciado interno del botón de eliminar por ID */

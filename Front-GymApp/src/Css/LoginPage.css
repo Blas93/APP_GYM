@@ -17,7 +17,7 @@ section#login  {
     padding: 900px; /* Espaciado interno del formulario */
     background-color: #f5f5f5; /* Color de fondo */
     padding: 10px;
-   margin-bottom: 50px;
+    margin-bottom: 50px;
     background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -51,7 +51,7 @@ section#login  {
   /* Estilos para los campos de entrada y etiquetas */
   label {
     display: block; /* Muestra cada etiqueta en una línea separada */
-    margin-bottom: 10px; /* Espaciado inferior entre etiquetas */
+    /*margin-bottom: 10px; /* Espaciado inferior entre etiquetas */
     font-weight: bold; /* Texto en negrita para etiquetas */
     
   }

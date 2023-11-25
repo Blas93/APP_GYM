@@ -27,7 +27,7 @@ export const Filter = () => {
     }
     return(
         <form className="Filtro" method="get" onSubmit={handleSubmit} >
-        <label htmlFor="grupoMuscular">Grupo Muscular:</label>
+        <label className='l-grupomuscular' htmlFor="grupoMuscular">Grupo Muscular:</label>
         <select name="grupoMuscular" id="grupoMuscular" onChange={(e) => {
           setMuscle_group(e.target.value);
         }}>
@@ -40,7 +40,7 @@ export const Filter = () => {
             <option id="1" value="Piernas">Piernas</option>
         </select> 
     
-        <label htmlFor="tipologia">Tipología:</label>
+        <label className='l-tipologia'htmlFor="tipologia">Tipología:</label>
         <select name="tipologia" id="tipologia" onChange={(e) => {
           setTypology(e.target.value);
         }}>

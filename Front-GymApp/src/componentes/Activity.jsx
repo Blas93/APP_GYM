@@ -12,7 +12,7 @@ export const Activity = ({ activity, deleteActivity, likeActivity }) => {
 	}
 	
 	return (
-		<article>
+		<article className="a-listactividades">
 			<Link className='l-card'to={`/activity/${activity.id}`}>
 				<p className="name">{activity.activity_name}</p>
 				<p className="description">{activity.description}</p>
@@ -27,10 +27,10 @@ export const Activity = ({ activity, deleteActivity, likeActivity }) => {
 				)}
 			</Link>
 			<div className="select-list">
-			<section>
+			<section className="s-botonfavorito">
 				<p className="totalLikes">{totalLikes}</p>
 				<button className="b-favorite" onClick={handleClick}>{activity.liked ? 
-				<img id='favorite' src={favorite} alt='favorite' title='favorite image' /> : <img id='favorite-like' src={favorite} alt='favorite' title='favorite image' /> }</button>
+				<img className='favorite' src={favorite} alt='favorite' title='favorite image' /> : <img className='favorite-like' src={favorite} alt='favorite' title='favorite image' /> }</button>
 			</section>
 			{user && user.role === "administrator" && 
 				<button className="b-eliminar" onClick={() => deleteActivity(activity.id, token)} >
