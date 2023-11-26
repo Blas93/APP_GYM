@@ -66,7 +66,7 @@ label.l-imagen{
   text-align: center;
 }
 .a-list:hover{
-  background: rgb(236, 230, 63), 249, 115);
+  background: #b1e8cd;
 }
 
 .select-list{
@@ -74,8 +74,8 @@ label.l-imagen{
 } 
 /*Da dormato a la imagen del formulario de subida como de la tarjeta*/
 .a-img{
-  width: 150px;
-  height: 150px;
+  width: 400px;
+  height: 400px;
   }
   @media (max-width: 1024px){
     .t-select{
@@ -97,6 +97,14 @@ label.l-imagen{
       height: 400px;
       }
   } 
+
+@media only screen and (max-width:600px) {
+  .filtro {
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+
   @media (max-width: 425px){
     .Filtro{
       display: flex;
@@ -114,8 +122,8 @@ label.l-imagen{
     width: 349px;
   }
   .a-img{
-    width: 370px;
-    height: 370px;
+    width: 350px;
+    height: 350px;
     }
 } 
   @media (max-width: 375px){
@@ -134,12 +142,11 @@ label.l-imagen{
  .l-act{
     text-align: center;
   }
- .filtro{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
+ 
+
+#buscar{
+  display: block;
   text-align: center;
-  gap: 1rem;
 }
 
 .t-h1{

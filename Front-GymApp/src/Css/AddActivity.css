@@ -1,1 +1,18 @@
+#card {
+    max-width: 600px; /* O el ancho que desees */
+    margin: 0 auto; /* Centrar el formulario en la pantalla */
+  }
+  
+  .t-select,
+  .gm-select {
+    width: 100%;
+    margin-bottom: 15px; /* Ajustar el espaciado entre los elementos */
+  }
+  
+  .input-file {
+    display: none; /* Ocultar el input file predeterminado */
+  }
+  
+  /* Puedes ajustar los estilos para otros elementos según sea necesario */
+  
 

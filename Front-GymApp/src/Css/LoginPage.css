@@ -51,7 +51,7 @@ section#login  {
   /* Estilos para los campos de entrada y etiquetas */
   label {
     display: block; /* Muestra cada etiqueta en una línea separada */
-    /*margin-bottom: 10px; /* Espaciado inferior entre etiquetas */
+    margin-bottom: 10px; /* Espaciado inferior entre etiquetas */
     font-weight: bold; /* Texto en negrita para etiquetas */
     
   }

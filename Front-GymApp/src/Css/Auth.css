@@ -53,6 +53,11 @@ p#login {
     transform: scale(0.95); /* Efecto de escala al hacer clic */
 }
 
+#l-link{
+  width: 109.5px;
+  height: 49px;
+}
+
 .lgo-link {
   display: inline-block;
     background-color: yellow;
@@ -61,7 +66,8 @@ p#login {
     padding:  10px 15px;
     font-weight: bold;
     cursor: pointer;
-    width: auto;
+    width: 109.5px;
+    height: 49px;
     border-radius: 5px; /* Esquinas redondeadas */
     transition: background-color 0.3s, color 0.3s, border-radius 0.3s; /* Transición de colores y esquinas redondeadas */
   }
