@@ -8,7 +8,7 @@ export const UserPage = () => {
   
   return (
     <section>
-        <h2 id='usuario'>UserPage</h2>
+        <h2 id='usuario'>Perfil de usuario</h2>
         <UserInfo user={user} />
         <FavoriteList />
     </section>

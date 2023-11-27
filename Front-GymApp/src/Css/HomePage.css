@@ -1,24 +1,101 @@
-
-.Filtro{
-  display: flex;
-  flex-direction: row; /*pone todos los campos del formularios en una misma línea*/
-  margin-left: 20px; /*separa el form del filtro del margen izquierdo*/
-  gap: 1rem; /*da espacio entre cada uno de los campos del form*/
-  text-align: left; /*alinea el texto de cada campo a la izquierda*/
-  align-items: center;
-  margin-top: 1rem; /*separa el buscador del header*/
+body{
+  margin: 0; /*elimina el margen que viene por defecto en el body*/
 }
 
+h2.t-h2{
+  text-align: center;
+}
+.lgo-link:hover {
+  background-color: #000; /* Negro al pasar el ratÃ³n */
+  color: #FFD700; /* Amarillo al pasar el ratÃ³n */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8); /* Agrega sombra al texto al pasar el ratÃ³n */
+}
+.l-grupomuscular{
+  margin-bottom: 0px;
+}
+.l-tipologia{
+  margin-bottom: 0px;
+}
+
+/*AÃ‘ADIR UNA ACTIVIDAD*/
+#agregar{
+  color: white;
+  background-color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.cuadro-formulario{
+  border: black;
+}
+#card{
+  /*width: fit-content;*/
+  display: grid;
+  grid-template-columns: auto;
+}
+.t-select{
+  height:37.5px ;
+  padding:0.5em;
+}
+.gm-select{
+  height:37.5px ;
+  padding:0.5em;
+}
+
+
+
+/*CARD DE LAS ACTIVIDADES*/
+ul.ul-listaactividades{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  }
+
+  .a-list{
+    height: fit-content;
+    border:1rem;
+    border: 0;
+    border-radius: 0.9rem;
+    background: white;
+    color: black;
+    font-size: 1em;
+    color: #999;
+    gap: 2rem;
+    margin: 1rem;
+    border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    /*position: relative;*/
+    transition: all 0.25s ease;
+    text-align: center;
+  }
+  .a-list:hover{
+    background: yellow;
+  }
+div.Datos{
+width: 25rem;
+text-align: left;
+}
+
+a.l-card{
+  display: flex;
+  flex-direction:row;
+  text-overflow:ellipsis;
+  border-radius: 15%;
+  border-color: #7b7b7b;
+}
+
+/*Da dormato a la imagen del formulario de subida como de la tarjeta*/
+.a-img{
+  width: 150px;
+  height: 150px;
+  margin-top: 1rem;
+  }
+  .select-list{
+    appearance:none;
+  } 
 #buscar{
   background-color: black;
   color: white;
 }
 
-
-ul.ul-listaactividades{
-  display:grid;
-  grid-template-columns: repeat(2, efr);
-}
 .totalLikes{
   color: transparent;
 }
@@ -27,150 +104,124 @@ label.l-imagen{
   flex-direction: column;
 }
 
-.l-card{
-  display: flex;
-  flex-direction: column;
-  text-overflow:ellipsis;
-}
 .cuadro-formulario{
   border-color: black;
 }
-.t-select{
-  height:37.5px ;
-  margin-bottom: 10px;
-  padding:0.5em;
-}
-.gm-select{
-  height:37.5px ;
-  padding:0.5em;
-}
-#agregar{
-  color: white;
-  background-color: black;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 
-.a-list{
-  border:1rem;
-  border: 0;
-	border-radius: 0.9rem;
-	background: #f0f0f0;
-	color: #7b7b7b;
-	font-size: 1em;
-	color: #999;
-  gap: 2rem;
-  margin: 1rem;
-  border:2px solid rgba(0,0,0,0.2);
-  border-radius: 12px;
-  position: relative;
-  transition: all 0.25s ease;
-  text-align: center;
-}
-.a-list:hover{
-  background: #b1e8cd;
-}
 
-.select-list{
-  appearance:none;
-} 
-/*Da dormato a la imagen del formulario de subida como de la tarjeta*/
-.a-img{
-  width: 400px;
-  height: 400px;
-  }
   @media (max-width: 1024px){
+
+    a.l-card{
+      display: flex;
+      flex-direction:column;
+      text-overflow:ellipsis;
+      border-radius: 15%;
+      border-color: #7b7b7b;
+    }
     .t-select{
-      width: 948px;
+      width: 964px;
     }
     .gm-select{
-      width: 948px;
+      width: 964px;
     }
+  
   } 
   @media (max-width: 768px){
+    ul.ul-listaactividades{
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      }
     .t-select{
-      width: 692px;
+      width: 708px;
     }
     .gm-select{
-      width: 692px;
+      width: 708px;
+    }
+    .a-list{
+      /*size-adjust:initial ;*/  
+      display: grid;
+      grid-template-columns: auto;
+      height: fit-content;
     }
     .a-img{
-      width: 400px;
-      height: 400px;
+      width: 200px;
+      height: 200px;
       }
   } 
-
-@media only screen and (max-width:600px) {
-  .filtro {
-    flex-direction: column;
-    margin-left: 0;
-  }
-}
-
   @media (max-width: 425px){
-    .Filtro{
+    ul.ul-listaactividades{
       display: flex;
-      flex-direction: column; /*pone todos los campos del formularios en columna*/
-      margin-left: none; /*separa el form del filtro del margen izquierdo*/
-      gap: 1rem; /*da espacio entre cada uno de los campos del form*/
-      text-align: left; /*alinea el texto de cada campo a la izquierda*/
-      align-items: center;
-      margin-top: 1rem; /*separa el buscador del header*/
+      flex-direction: column;
     }
+ 
+    div.Datos{
+      width: 16rem;
+      text-align: left;
+      }
   .t-select{
-    width: 349px;
+    width: 365px;
   }
   .gm-select{
-    width: 349px;
+    width: 365px;
   }
+  a.l-card{
+    flex-direction: column;
+  }
+  div.Datos{
+    width: 19rem;
+    text-align: left;
+    }
   .a-img{
-    width: 350px;
-    height: 350px;
+    width: 280px;
+    height: 280px;
     }
 } 
   @media (max-width: 375px){
+    
     .t-select{
-      width: 299px;
+      width: 315px;
     }
     .gm-select{
-      width: 299px;
+      width: 315px;
     }
+    div.Datos{
+      width: 17rem;
+      text-align: left;
+      }
     .a-img{
-      width: 300px;
-      height: 300px;
+      width: 200px;
+      height: 200px;
       }
   }
 @media (max-width: 320px){
  .l-act{
     text-align: center;
   }
- 
 
-#buscar{
-  display: block;
-  text-align: center;
-}
 
 .t-h1{
-  width: fit-content;
   height: fit-content;
   text-align: center;
 }
-
 .t-select{
   width: 276px;
 }
 .gm-select{
   width: 276px;
 }
+
 .a-card{
   height:35rem;
   border: 0.5rem;
   border-color: black;
 }
+div.Datos{
+  width: 16rem;
+  text-align: left;
+  }
 .a-img{
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   }
 .b-favorite .b-eliminar{
   text-align: center;
@@ -199,9 +250,11 @@ p.typology{
   text-align: left;
 }
 
+.f-imgsubida{
+  width: 2rem;
+  height: 2rem;
+}
+ 
 }
 
- 
-
-  
 

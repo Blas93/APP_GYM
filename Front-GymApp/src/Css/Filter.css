@@ -1,1 +1,30 @@
-
+/*FILTRO*/
+.Filtro{
+    display: flex;
+    flex-direction: row; /*pone todos los campos del formularios en una misma lÃ­nea*/
+    margin-left: 20px; /*separa el form del filtro del margen izquierdo*/
+    gap: 1rem; /*da espacio entre cada uno de los campos del form*/
+    text-align: left; /*alinea el texto de cada campo a la izquierda*/
+    align-items: center;
+    margin-top: 1rem; /*separa el buscador del header*/
+  }
+  @media (max-width: 425px){
+    .Filtro{
+        display: flex;
+        flex-direction: column; /*pone todos los campos del formularios en columna*/
+        margin-left: none; /*separa el form del filtro del margen izquierdo*/
+        gap: 1rem; /*da espacio entre cada uno de los campos del form*/
+        text-align: left; /*alinea el texto de cada campo a la izquierda*/
+        align-items: center;
+        margin-top: 1rem; /*separa el buscador del header*/
+      }
+  }
+  @media (max-width: 320px){
+    .filtro{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: center;
+        gap: 1rem;
+      }
+  }

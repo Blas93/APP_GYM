@@ -3,6 +3,8 @@ import { ErrorMessage } from "../componentes/ErrorMessage";
 import useActivity from "../hooks/activityDefinition";
 import { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
+import '../Css/Activity.css';
+
 
 export const ActivityPage = () => {
   const { id } = useParams();
@@ -73,22 +75,22 @@ export const ActivityPage = () => {
       <form id='general' onSubmit={handleSubmit}>
         <label>
           Nombre de la Actividad:
-          <input
+          <input className="i-nombre"
             type="text"
             name="activity_name"
             value={activityData.activity_name}
             onChange={handleInputChange}
           />
         </label>
-        <label>
+        <label className="l-descriptionact">
           Descripción:
-          <textarea
+          <textarea className="ta-description"
             name="description"
             value={activityData.description}
             onChange={handleInputChange}
           />
         </label>
-        <label>
+        <label className="l-imageact">
           Imagen:
           <input
             type="file"
@@ -96,9 +98,9 @@ export const ActivityPage = () => {
             onChange={handleInputChange}
           />
         </label>
-        <label>
+        <label className="l-typologyact">
           Tipología:
-          <select
+          <select className="s-typologyact"
             name="typology"
             value={activityData.typology}
             onChange={handleInputChange}
@@ -110,9 +112,9 @@ export const ActivityPage = () => {
             ))}
           </select>
         </label>
-        <label>
+        <label className="l-gmuscularact">
           Grupo Muscular:
-          <select
+          <select className="s-gmuscularact"
             name="muscle_group"
             value={activityData.muscle_group}
             onChange={handleInputChange}
@@ -125,7 +127,7 @@ export const ActivityPage = () => {
           </select>
         </label>
         {isAdmin && ( 
-        <button id="Boton-editar" type="submit">
+        <button className='boton-editar' type="submit">
           Editar
         </button>)}
       </form>

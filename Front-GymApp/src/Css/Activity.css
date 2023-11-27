@@ -1,3 +1,44 @@
+
 img.favorite-like{
-background-color: rgb(252, 6, 6);
-}
+    background-color: rgb(252, 6, 6);
+    }
+    
+    section.s-description{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label.l-nombreact{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 30%;
+    }
+    label.l-descriptionact{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 30%;
+    }
+    label.l-imageact{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 30%;
+    }
+    label.l-typologyact{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 30%;
+    }
+    label.l-gmuscularact{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 30%;
+    }
+    
+    button.boton-editar{
+    margin-top: 1rem;
+    }

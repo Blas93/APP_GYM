@@ -1,5 +1,6 @@
 import '../Css/HomePage.css'
 import '../Css/Articles.css'
+import '../Css/Filter.css'
 import { ActivitiesList } from '../componentes/ActivitiesList'
 import { Filter } from '../componentes/Filter'
 import { useActivities } from '../hooks/useActivities'
